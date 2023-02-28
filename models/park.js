@@ -4,4 +4,7 @@ const Park = function (name, price, dinosaurs = []) {
     this.dinosaurs = dinosaurs;
 };
 
+Park.prototype.addDinosaur = function (dinosaur) {
+    this.dinosaurs.push(dinosaur);
+};
 module.exports = Park
