@@ -72,4 +72,12 @@ describe('Park', function () {
     assert.strictEqual(actual, 116800000)
   });
 
+  it('should be able to remove all dinosaurs of a species', function () {
+    islaNublar.removeAllBySpecies('T-Rex');
+    const actual = islaNublar.dinosaurs;
+    assert.deepStrictEqual(actual, [deinonychus, brachiosaurus, deinonychus, brachiosaurus])
+  });
+
+
+
 });
