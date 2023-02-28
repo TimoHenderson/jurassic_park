@@ -46,8 +46,8 @@ describe('Park', function () {
     assert.deepStrictEqual(actual, expected);
   });
 
-  xit('should be able to find the dinosaur that attracts the most visitors', function () {
-    const actual = islaNublar.findMostPopularDinosaur();
+  it('should be able to find the dinosaur that attracts the most visitors', function () {
+    const actual = islaNublar.getMostPopularDinosaur();
     assert.deepStrictEqual(actual, tRex);
   });
 
