@@ -57,7 +57,7 @@ describe('Park', function () {
   });
 
 
-  xit('should be able to calculate the total number of visitors per day', function () {
+  it('should be able to calculate the total number of visitors per day', function () {
     const actual = islaNublar.getVisitorsPerDay();
     assert.strictEqual(actual, 3200);
   });
