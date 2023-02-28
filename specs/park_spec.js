@@ -78,6 +78,14 @@ describe('Park', function () {
     assert.deepStrictEqual(actual, [deinonychus, brachiosaurus, deinonychus, brachiosaurus])
   });
 
+  it('should be able toget the number of all of the diet types in park', function () {
+    const actual = islaNublar.getNumberOfDinosWithDiets();
+    const expected = { "carnivore": 4, "herbivore": 2 };
+    assert.deepStrictEqual(actual, expected);
+  });
+
+
+
 
 
 });

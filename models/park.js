@@ -58,5 +58,18 @@ Park.prototype.removeAllBySpecies = function (species) {
         }
     }
 };
+Park.prototype.getNumberOfDinosWithDiets = function () {
+    const dinoDiets = {};
+    for (dinosaur of this.dinosaurs) {
+        if (dinosaur.diet in dinoDiets) {
+            dinoDiets[dinosaur.diet] += 1;
+        } else {
+            dinoDiets[dinosaur.diet] = 1;
+        }
+    }
+    return dinoDiets;
+};
+
+
 
 module.exports = Park
