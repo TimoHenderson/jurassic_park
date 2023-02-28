@@ -47,6 +47,9 @@ Park.prototype.getVisitorsPerYear = function () {
     return this.getVisitorsPerDay() * 365;
 };
 
+Park.prototype.getRevenuePerYear = function () {
+    return this.getVisitorsPerYear() * this.price;
+};
 
 
 

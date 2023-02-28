@@ -67,7 +67,7 @@ describe('Park', function () {
     assert.strictEqual(actual, 1168000);
   });
 
-  xit('should be able to calculate total revenue for one year', function () {
+  it('should be able to calculate total revenue for one year', function () {
     const actual = islaNublar.getRevenuePerYear();
     assert.strictEqual(actual, 116800000)
   });
