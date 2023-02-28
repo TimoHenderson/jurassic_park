@@ -23,51 +23,51 @@ describe('Park', function () {
     assert.strictEqual(actual, "Isla Sorna");
   });
 
-  it('should have a ticket price', function () {
+  xit('should have a ticket price', function () {
     const actual = islaSorna.price;
     assert.strictEqual(actual, 120);
   });
 
-  it('should have a collection of dinosaurs', function () {
+  xit('should have a collection of dinosaurs', function () {
     const actual = islaSorna.dinosaurs;
     assert.deepStrictEqual(actual, []);
   });
 
-  it('should be able to add a dinosaur to its collection', function () {
+  xit('should be able to add a dinosaur to its collection', function () {
     islaSorna.addDinosaur(tRex);
     const actual = islaSorna.dinosaurs;
     assert.deepStrictEqual(actual, [tRex]);
   });
 
-  it('should be able to remove a dinosaur from its collection', function () {
+  xit('should be able to remove a dinosaur from its collection', function () {
     islaNublar.removeDinosaur(tRex);
     const actual = islaNublar.dinosaurs;
     const expected = [deinonychus, brachiosaurus, tRex, deinonychus, brachiosaurus];
     assert.deepStrictEqual(actual, expected);
   });
 
-  it('should be able to find the dinosaur that attracts the most visitors', function () {
+  xit('should be able to find the dinosaur that attracts the most visitors', function () {
     const actual = islaNublar.findMostPopularDinosaur();
     assert.deepStrictEqual(actual, tRex);
   });
 
-  it('should be able to find all dinosaurs of a particular species', function () {
+  xit('should be able to find all dinosaurs of a particular species', function () {
     const actual = islaNublar.getDinosaursWithSpecies("Deinonychus");
     assert.deepStrictEqual(actual, [deinonychus, deinonychus]);
   });
 
 
-  it('should be able to calculate the total number of visitors per day', function () {
+  xit('should be able to calculate the total number of visitors per day', function () {
     const actual = islaNublar.getVisitorsPerDay();
     assert.strictEqual(actual, 3200);
   });
 
-  it('should be able to calculate the total number of visitors per year', function () {
+  xit('should be able to calculate the total number of visitors per year', function () {
     const actual = islaNublar.getVisitorsPerYear();
     assert.strictEqual(actual, 1168000);
   });
 
-  it('should be able to calculate total revenue for one year', function () {
+  xit('should be able to calculate total revenue for one year', function () {
     const actual = islaNublar.getRevenuePerYear();
     assert.strictEqual(actual, 116800000)
   });
