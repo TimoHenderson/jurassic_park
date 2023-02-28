@@ -43,5 +43,11 @@ Park.prototype.getVisitorsPerDay = function () {
     return visitorsPerDay;
 };
 
+Park.prototype.getVisitorsPerYear = function () {
+    return this.getVisitorsPerDay() * 365;
+};
+
+
+
 
 module.exports = Park

@@ -62,7 +62,7 @@ describe('Park', function () {
     assert.strictEqual(actual, 3200);
   });
 
-  xit('should be able to calculate the total number of visitors per year', function () {
+  it('should be able to calculate the total number of visitors per year', function () {
     const actual = islaNublar.getVisitorsPerYear();
     assert.strictEqual(actual, 1168000);
   });
