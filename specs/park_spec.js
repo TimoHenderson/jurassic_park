@@ -39,7 +39,7 @@ describe('Park', function () {
     assert.deepStrictEqual(actual, [tRex]);
   });
 
-  xit('should be able to remove a dinosaur from its collection', function () {
+  it('should be able to remove a dinosaur from its collection', function () {
     islaNublar.removeDinosaur(tRex);
     const actual = islaNublar.dinosaurs;
     const expected = [deinonychus, brachiosaurus, tRex, deinonychus, brachiosaurus];
