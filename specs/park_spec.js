@@ -51,7 +51,7 @@ describe('Park', function () {
     assert.deepStrictEqual(actual, tRex);
   });
 
-  xit('should be able to find all dinosaurs of a particular species', function () {
+  it('should be able to find all dinosaurs of a particular species', function () {
     const actual = islaNublar.getDinosaursWithSpecies("Deinonychus");
     assert.deepStrictEqual(actual, [deinonychus, deinonychus]);
   });
