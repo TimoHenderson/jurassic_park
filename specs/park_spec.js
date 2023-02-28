@@ -23,7 +23,7 @@ describe('Park', function () {
     assert.strictEqual(actual, "Isla Sorna");
   });
 
-  xit('should have a ticket price', function () {
+  it('should have a ticket price', function () {
     const actual = islaSorna.price;
     assert.strictEqual(actual, 120);
   });
